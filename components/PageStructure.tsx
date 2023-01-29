@@ -23,7 +23,6 @@ export default function PageStructure(props: any) {
     }
   }
 
-
   return (
     <div className={styles.page}>
       <div className={styles.tabcontainer}>
@@ -34,7 +33,7 @@ export default function PageStructure(props: any) {
           <div className={styles.tab} style={projectStyle}><span className={styles.projects} id='projects' onClick={handleClick}>Projects</span></div>
         </Link>
         <Link href='/contact'>
-          <div className={styles.tab} style={contactStyle}><span className={styles.contact} id='contact' onClick={handleClick}>Contact</span></div>
+          <div className={styles.tab} style={contactStyle}><span className={styles.contact} id='contact' onClick={handleClick}>Contact    </span></div>
         </Link>
       </div>
       <div className={styles.display}>
