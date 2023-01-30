@@ -1,2 +1,3 @@
 - create custom context to set the projects tabs correctly every time? 
 - formatting and info for all projects
+- responsive design
