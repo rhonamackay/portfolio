@@ -1,0 +1,35 @@
+.titlecontainer {
+    display: flex;
+    align-items: center;
+}
+
+.aboutme>p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+
+}
+
+.titlecontainer>img {
+    border-radius: 15px;
+    border: 10px solid rgb(244, 238, 238);
+    box-shadow: var(--shadow-elevation-low);
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.tag{
+    font-size:1rem;
+    background-color: #00F57E;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.tagcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+

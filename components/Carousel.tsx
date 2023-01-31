@@ -3,11 +3,9 @@ import Image from 'next/image';
 import React from 'react'
 import { Carousel } from "react-responsive-carousel";
 
-
-
 function ImageCarousel({images}: carouselPropsType) {
   return (
-    <Carousel >
+    <Carousel showThumbs={false}>
         {images.map((img, index) => {
            return <div key={index}>
             <Image

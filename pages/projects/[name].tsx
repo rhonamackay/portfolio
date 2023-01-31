@@ -5,11 +5,9 @@ import { ImArrowLeft2 } from 'react-icons/im'
 import { AiFillGithub } from 'react-icons/ai'
 import { RiExternalLinkLine } from 'react-icons/ri'
 import Link from 'next/link'
-import Image from 'next/image';
 import { Tooltip } from 'react-tooltip'
 import 'react-tooltip/dist/react-tooltip.css';
 import styles from "../../styles/project.module.css"
-import { Carousel } from "react-responsive-carousel";
 import ImageCarousel from '@/components/Carousel'
 
 
