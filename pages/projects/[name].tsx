@@ -41,8 +41,31 @@ export async function getStaticProps({ params }: projectPageParamsType) {
 function ProjectPage({thisProject}: projectPagePropsType) {
     return (
     <div className={styles.projContainer}>
-        <div><Link href='/projects'><ImArrowLeft2/></Link></div>
-        <h1>{thisProject.displayName}</h1>
+        <div className={styles.titlearea}>
+            <Link href='/projects'><ImArrowLeft2/></Link>
+            <h1>{thisProject.displayName}</h1>
+            <div className={styles.icons}>
+                <a href={thisProject.deployedURL} target="_blank" rel="noreferrer" id="deployed-url" data-tooltip-content="Visit the deployed project">
+                    <RiExternalLinkLine/>
+                    <Tooltip anchorId="deployed-url" />
+                </a>
+                {typeof(thisProject.gitURL)==='string' ? 
+                    <a href={thisProject.gitURL} target="_blank" rel="noreferrer" data-tooltip-content="Visit the GitHub repo" id="github-url">
+                        <AiFillGithub/>
+                        <Tooltip anchorId="github-url"/>
+                    </a>
+                    : <>
+                        <a href={thisProject.gitURL[0]} target="_blank" rel="noreferrer" data-tooltip-content="Visit the front end GitHub repo" id="github-front">
+                            <AiFillGithub/>
+                            <Tooltip anchorId="github-front"/>
+                        </a> 
+                        <a href={thisProject.gitURL[1]} target="_blank" rel="noreferrer" data-tooltip-content="Visit the back end GitHub repo" id="github-back">
+                            <AiFillGithub/>
+                            <Tooltip anchorId="github-back"/>
+                        </a>
+                    </>}
+                </div>
+            </div>
         <p>{thisProject.desc}</p>
         <div className={styles.tagContainer}>
             {thisProject.stack.map((tag, index) => {
@@ -51,28 +74,6 @@ function ProjectPage({thisProject}: projectPagePropsType) {
         </div>
         <div className={styles.carouselContainer}>
             <ImageCarousel images={thisProject.gallery}/>
-        </div>
-        <div className={styles.icons}>
-            <a href={thisProject.deployedURL} target="_blank" rel="noreferrer" id="deployed-url" data-tooltip-content="Visit the deployed project">
-                <RiExternalLinkLine/>
-                <Tooltip anchorId="deployed-url" />
-            </a>
-            {typeof(thisProject.gitURL)==='string' ? 
-                <a href={thisProject.gitURL} target="_blank" rel="noreferrer" data-tooltip-content="Visit the GitHub repo" id="github-url">
-                    <AiFillGithub/>
-                    <Tooltip anchorId="github-url"/>
-                </a>
-                : <>
-                    <a href={thisProject.gitURL[0]} target="_blank" rel="noreferrer" data-tooltip-content="Visit the front end GitHub repo" id="github-front">
-                        <AiFillGithub/>
-                        <Tooltip anchorId="github-front"/>
-                    </a> 
-                    <a href={thisProject.gitURL[1]} target="_blank" rel="noreferrer" data-tooltip-content="Visit the back end GitHub repo" id="github-back">
-                        <AiFillGithub/>
-                        <Tooltip anchorId="github-back"/>
-                    </a>
-                </>}
-        
         </div>
     </div>
   )

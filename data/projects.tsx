@@ -19,8 +19,8 @@ export const projectData = [
     },
     {
         name: 'cheers',
-        displayName: "Cheers: School of Code final project",
-        desc: 'Month-long final project for School of Code bootcamp. Full-stack website with Next.js frontend and Express and MongoDB on the backend.',
+        displayName: "Cheers: bootcamp final project",
+        desc: 'Month-long final project for School of Code bootcamp. Full-stack website with React Next.js frontend and Express and MongoDB on the backend.',
         stack: ['React', 'Next.js', 'JavaScript', 'CSS', 'Cypress testing', 'MongoDB', 'Express'],
         deployedURL: 'https://cheersy.vercel.app/',
         gitURL: ['https://github.com/SchoolOfCode/bc13_final-project_front-end-beast-code','https://github.com/SchoolOfCode/bc13_final-project_back-end-beast-code'],
