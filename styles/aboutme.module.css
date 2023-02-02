@@ -20,7 +20,7 @@
 
 .tag{
     font-size:1rem;
-    background-color: #00F57E;
+    background-color: var(--blue);
     padding: 3px;
     border-radius: 5px;
     margin: 3px;
@@ -43,11 +43,18 @@
 .iconcontainer>a{
     font-size: 5rem;
     border-radius: 15px;
-    color:#00F57E;
+    color: var(--green);
 
+}
+
+.iconcontainer>a :hover {
+    color: var(--orange);
+    -webkit-animation: var(--vibrate-animation);
+	        animation: var(--vibrate-animation);
 }
 
 .tooltip {
     font-size: 1rem;
 }
+
 

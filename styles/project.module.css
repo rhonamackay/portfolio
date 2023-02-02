@@ -26,6 +26,13 @@
     box-shadow: var(--shadow-elevation-low);
 }
 
+.icons>a :hover {
+    color: var(--blue);
+    background-color: black;
+    -webkit-animation: var(--vibrate-animation);
+	        animation: var(--vibrate-animation);
+}
+
 .carouselContainer {
     width:80%;
     display: flex;
@@ -48,7 +55,7 @@
 
 .tag{
     font-size:11px;
-    background-color: #00F57E;
+    background-color: var(--blue);
     padding: 3px;
     border-radius: 5px;
 }
@@ -63,4 +70,52 @@
 .titlearea>a{
     align-self: flex-start;
     padding-bottom: -10px;
+}
+
+.projectItem>img{
+    border-radius: 15px;
+    border: 10px solid rgb(244, 238, 238);
+    box-shadow: var(--shadow-elevation-low);
+}
+
+.projectList>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 25px
+}
+
+.projectList {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caption {
+    margin: 0 0 0 10px;
+    background-position: 0% 100%;
+    background-size: 0% 0px;
+    background-color: var(--green);
+   
+}
+
+.caption:hover {
+    background-color: var(--orange);
+}
+
+@keyframes highlight {
+    0% { 
+        /* background-size: 0% 2px; */
+        /* background-position: 0% 100%; */
+    }
+    50% {
+
+    }
+    100% {
+        /* background-size: 100% 100%; */
+        background-position: 0% 0%;
+        background-color: var(--green);
+    }
 }

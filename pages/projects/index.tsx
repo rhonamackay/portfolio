@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image';
 import React from 'react'
 import { projectData } from '@/data/projects'
 import { projectIndexPagePropsType } from '@/data/types'
@@ -15,13 +16,20 @@ export async function getStaticProps() {
 function Projects({ allProjects }: projectIndexPagePropsType) {
   return (
     <div>
-      <ul className={styles.projectList}>
+      <div className={styles.projectList}>
         {allProjects.map((project, index) => {
-        return <div key={index}>
-            <Link href={`/projects/${project.name}`}><li>• &nbsp; {project.displayName}</li></Link>
+        return <div key={index} >
+            <Link href={`/projects/${project.name}`} className={styles.projectItem}>
+            <Image
+                src={project.gallery[0]}
+                alt={project.name}
+                width={300}
+                height={200}
+            ></Image>
+            <span className={styles.caption}>{project.displayName}</span></Link>
           </div>
         })}
-      </ul>
+      </div>
     </div>
   )
 }

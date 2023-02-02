@@ -18,15 +18,12 @@ export async function getStaticPaths() {
     const paths = projects.map((proj) => ({
       params: { name: proj.name },
     }))
-    // We'll pre-render only these paths at build time.
     // { fallback: false } means other routes should 404.
     return { paths, fallback: false }
   }
 
 // This also gets called at build time
 export async function getStaticProps({ params }: projectPageParamsType) {
-    // params contains the post `id`.
-    // If the route is like /posts/1, then params.id is 1
     const allProjects = projectData
     let thisProject;
     for (let i=0;i<allProjects.length; i++) {

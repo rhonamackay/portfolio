@@ -33,6 +33,6 @@ export const projectData = [
         stack: ['React', 'Next.js', 'CSS', 'JavaScript'],
         deployedURL: 'tbc',
         gitURL: 'tbc',
-        gallery: ['tbc']
+        gallery: ['/portfolio-1.png']
     }
 ]

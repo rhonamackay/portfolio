@@ -1,2 +1,5 @@
 - formatting and info for all projects
-- responsive design
+- responsive design with flex/flex grow
+- clickable button animation and turn orange
+- add more info re projects 
+- web form for contact
