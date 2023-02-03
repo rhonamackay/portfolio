@@ -8,6 +8,8 @@
   --orange: #f99c4f;
   --blue: #00DEDA;
   --vibrate-animation: vibrate-1 0.3s linear infinite both;
+  --grow-animation: grow 2s ease-in-out infinite;
+  --pulse-anim: pulse 2s infinite ease-in-out alternate;
 }
 
 * {
@@ -25,6 +27,18 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+@keyframes grow {
+  0% {
+    font-size: 1em;
+  }
+  50% {
+    font-size: 1.2em;
+  }
+  100% {
+    font-size: 1em;
+  }
 }
 
 @keyframes vibrate-1 {
@@ -52,4 +66,8 @@ a {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+}
+
+@keyframes pulse {
+  10% { transform:  translateY(-10px); }
 }

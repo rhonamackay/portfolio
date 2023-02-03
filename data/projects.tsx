@@ -1,5 +1,14 @@
 export const projectData = [
     {
+        name: 'cheers',
+        displayName: "Cheers: bootcamp final project",
+        desc: 'The place to find the perfect bar! Full stack team project completed over a month as my bootcamp final project. Front end made with React, Typescript and Next.js, with Express and MongoDB on the backend.',
+        stack: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'CSS', 'Cypress testing', 'MongoDB', 'Express', 'Git', 'Agile methodology'],
+        deployedURL: 'https://cheersy.vercel.app/',
+        gitURL: ['https://github.com/SchoolOfCode/bc13_final-project_front-end-beast-code','https://github.com/SchoolOfCode/bc13_final-project_back-end-beast-code'],
+        gallery: ['/cheers-1.png', '/cheers-2.png', '/cheers-3.png']
+    },
+    {
         name: 'quiz',
         displayName: 'Test your knowledge!',
         desc: "Adapted from an early School of Code project, my trivia game fetches questions from Open Trivia Database's API for users to test their knowledge. Choose from easy, medium or hard multiple choice questions on a variety of topics.",
@@ -18,21 +27,12 @@ export const projectData = [
         gallery: ['/podcast-1.png', '/podcast-2.png']
     },
     {
-        name: 'cheers',
-        displayName: "Cheers: bootcamp final project",
-        desc: 'Month-long final project for School of Code bootcamp. Full-stack website with React Next.js frontend and Express and MongoDB on the backend.',
-        stack: ['React', 'Next.js', 'JavaScript', 'CSS', 'Cypress testing', 'MongoDB', 'Express'],
-        deployedURL: 'https://cheersy.vercel.app/',
-        gitURL: ['https://github.com/SchoolOfCode/bc13_final-project_front-end-beast-code','https://github.com/SchoolOfCode/bc13_final-project_back-end-beast-code'],
-        gallery: ['/cheers-1.png', '/cheers-2.png', '/cheers-3.png']
-    },
-    {
         name: 'portfolio',
         displayName: 'My portfolio',
         desc: "It's this website, the one you're on now.",
-        stack: ['React', 'Next.js', 'CSS', 'JavaScript'],
+        stack: ['React', 'TypeScript', 'Next.js', 'CSS', 'JavaScript'],
         deployedURL: 'tbc',
         gitURL: 'tbc',
-        gallery: ['/portfolio-1.png']
+        gallery: ['/portfolio-3.png']
     }
 ]

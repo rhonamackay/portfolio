@@ -16,6 +16,7 @@ export async function getStaticProps() {
 function Projects({ allProjects }: projectIndexPagePropsType) {
   return (
     <div>
+      <h2>Check out some of my projects:</h2>
       <div className={styles.projectList}>
         {allProjects.map((project, index) => {
         return <div key={index} >

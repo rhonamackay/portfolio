@@ -43,21 +43,29 @@ function ProjectPage({thisProject}: projectPagePropsType) {
             <h1>{thisProject.displayName}</h1>
             <div className={styles.icons}>
                 <a href={thisProject.deployedURL} target="_blank" rel="noreferrer" id="deployed-url" data-tooltip-content="Visit the deployed project">
-                    <RiExternalLinkLine/>
+                    <button className={styles.button}>
+                        <RiExternalLinkLine/>
+                    </button>
                     <Tooltip anchorId="deployed-url" />
                 </a>
                 {typeof(thisProject.gitURL)==='string' ? 
                     <a href={thisProject.gitURL} target="_blank" rel="noreferrer" data-tooltip-content="Visit the GitHub repo" id="github-url">
-                        <AiFillGithub/>
+                        <button className={styles.button}>
+                            <AiFillGithub/>
+                        </button>
                         <Tooltip anchorId="github-url"/>
                     </a>
                     : <>
                         <a href={thisProject.gitURL[0]} target="_blank" rel="noreferrer" data-tooltip-content="Visit the front end GitHub repo" id="github-front">
-                            <AiFillGithub/>
+                            <button className={styles.button}>
+                                <AiFillGithub/>
+                            </button>
                             <Tooltip anchorId="github-front"/>
                         </a> 
                         <a href={thisProject.gitURL[1]} target="_blank" rel="noreferrer" data-tooltip-content="Visit the back end GitHub repo" id="github-back">
-                            <AiFillGithub/>
+                            <button className={styles.button}>
+                                <AiFillGithub/>
+                            </button>
                             <Tooltip anchorId="github-back"/>
                         </a>
                     </>}
