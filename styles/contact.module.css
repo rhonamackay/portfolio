@@ -1,0 +1,22 @@
+.licontainer>a{
+    font-size: 5rem;
+    border-radius: 15px;
+    color: var(--green);
+
+}
+
+.licontainer>a :hover {
+    color: var(--orange);
+    -webkit-animation: var(--pulse-anim);
+	        animation: var(--pulse-anim);
+}
+
+.tooltip {
+    font-size: 1rem;
+}
+
+.licontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

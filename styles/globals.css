@@ -9,7 +9,7 @@
   --blue: #00DEDA;
   --vibrate-animation: vibrate-1 0.3s linear infinite both;
   --grow-animation: grow 2s ease-in-out infinite;
-  --pulse-anim: pulse 2s infinite ease-in-out alternate;
+  --pulse-anim: pulse 2s infinite ease-in-out;
 }
 
 * {
