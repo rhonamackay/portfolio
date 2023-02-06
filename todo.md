@@ -2,4 +2,6 @@
 - responsive design with flex/flex grow
 - clickable button animation and turn orange DONE
 - add more info re projects 
-- web form for contact
+- web form for contact DONE
+- Styling for contact form
+- Styling for alert message

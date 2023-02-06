@@ -1,8 +1,13 @@
+.contactPage {
+    display: flex;
+    flex-direction: column;
+}
+
 .licontainer>a{
     font-size: 5rem;
     border-radius: 15px;
     color: var(--green);
-
+    margin-bottom: -30px;
 }
 
 .licontainer>a :hover {
@@ -19,4 +24,55 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    align-self: center;
+}
+
+.form>input[type="submit"] {
+    color: black;
+    font-family: var(--font);
+    background: var(--green);
+    padding: 5px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.form>input[type="submit"]:hover {
+    color: black;
+    background: var(--orange);
+}
+
+.contactPage>hr {
+    margin: 10px;
+    border: 2px solid black;
+    margin: 20px 100px 30px 100px;
+}
+
+.textinput {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    font-family: var(--font);
+}
+
+.form>label{
+    font-size: 0.9rem;
+    align-self: flex-start;
+}
+
+.form>textarea {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    font-family: var(--font);
+}
+
+.form>span {
+    font-size: 0.7rem;
 }
