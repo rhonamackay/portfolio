@@ -4,8 +4,8 @@ export const projectData = [
         displayName: 'My portfolio',
         desc: "It's this website, the one you're on now.",
         stack: ['React', 'TypeScript', 'Next.js', 'CSS', 'JavaScript'],
-        deployedURL: 'tbc',
-        gitURL: 'tbc',
+        deployedURL: 'https://my-portfolio-rhonamackay.vercel.app/projects',
+        gitURL: 'https://github.com/rhonamackay/portfolio',
         gallery: ['/portfolio-3.png']
     },
     {

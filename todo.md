@@ -3,5 +3,5 @@
 - clickable button animation and turn orange DONE
 - add more info re projects 
 - web form for contact DONE
-- Styling for contact form
-- Styling for alert message
+- Styling for contact form DONE
+- Styling for alert message DONE
